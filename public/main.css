@@ -8,17 +8,23 @@
   grid-gap: 2%;
 }
 p, h4, h6, a {
-  opacity: 0.8;
   margin-top: 0;
   margin-bottom: 5px;
   text-align: justify;
 }
+p {
+  color: #6a6a6a;
+  font-size: small;
+}
 h4 a{
   text-decoration-line: none;
+  color: #1a0dab;
+  font-size: normal;
 }
 a {
   text-decoration: none;
-  text-decoration-color: #006621 !important;
+  color: #006621;
+  font-size: normal;
 }
 form {
   border: 5px solid black;
