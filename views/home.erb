@@ -1,0 +1,20 @@
+<div id="searchBar">
+  <form action="/" method="get">
+    <input type="text" name="createria" placeholder="Enter the book you want to search">
+  </form>
+</div>
+<div>
+  <% for i in 0..9 do %>
+  <div class="grid-container">
+    <img src="<%= @images[i]%>">
+    <div class='results'>
+      <h4 class = "title"><a href="<%= @links[i] %>"><%= @titles[i] %></a></h4>
+      <h6 class = "author"><%= @authors[i] %></h6>
+      <p class= "description"><%= @description[i] %></p>
+      <a href="<%= @links[i] %>"><%= @links[i] %></a>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+</div>

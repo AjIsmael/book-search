@@ -1,0 +1,48 @@
+.grid-container {
+  display: grid;
+  grid-template: auto/ 15% 80%;
+  width: 60%;
+  justify-content: center;
+  padding-top: 50px;
+  padding-left: 5%;
+  grid-gap: 2%;
+}
+p, h4, h6, a {
+  opacity: 0.8;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+h4 a{
+  text-decoration-line: none;
+}
+a {
+  text-decoration: none;
+  text-decoration-color: #006621 !important;
+}
+form {
+  border: 5px solid black;
+  border-radius: 30%;
+  width: 40%;
+  margin-left: 30%;
+}
+.hidden {
+  display: none;
+}
+input {
+  width: 100%;
+  text-align: center;
+  font: 16px arial,sans-serif;
+  line-height: 34px;
+  height: 100px !important;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
