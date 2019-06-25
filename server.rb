@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'googlebooks'
-@trial = [1,2]
+
 get "/" do
   books = GoogleBooks.search("#{params[:createria]}", {:count => 10})
   @titles, @authors, @images, @links, @description = [], [], [], [], []
@@ -12,4 +12,8 @@ get "/" do
     @description << item.description
   end
   erb :home
+end
+
+get "/home" do
+  redirect to('/')
 end

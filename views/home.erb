@@ -1,10 +1,12 @@
 <div id="searchBar">
+  <img id="logo" src="Capture.JPG">
   <form action="/" method="get">
     <input type="text" name="createria" placeholder="Enter the book you want to search">
   </form>
 </div>
-<div>
-  <% for i in 0..9 do %>
+
+<div id="result">
+  <% for i in 0..@titles.length do %>
   <div class="grid-container">
     <img src="<%= @images[i]%>">
     <div class='results'>
